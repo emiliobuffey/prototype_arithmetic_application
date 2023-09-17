@@ -1,5 +1,6 @@
 ﻿namespace ArithmeticLibrary
 {
+    #region Interfaces
     public interface IAddition
     {
         int Add(int a, int b);
@@ -41,7 +42,7 @@
         int Negate(int a);
         decimal Negate(decimal a);
     }
-
+    #endregion
     public class Arithmetic : IAddition, ISubtraction, IMultiplication, IDivision, IModulus, IUnaryOperations
     {
         #region Addition
