@@ -19,12 +19,12 @@ namespace ArithmeticLibrary.Tests
         }
 
         [TestMethod()]
-        public void SubstractTest()
+        public void SubtractTest()
         {
             var num1 = 3;
             var num2 = 1;
-            
-            Assert.IsTrue(_arith.Substract(num1, num2) == num1 - num2);
+
+            Assert.IsTrue(_arith.Subtract(num1, num2) == num1 - num2);
         }
 
         [TestMethod()]
