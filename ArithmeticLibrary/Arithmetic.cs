@@ -1,6 +1,9 @@
 ﻿namespace ArithmeticLibrary
 {
     #region Interfaces
+    /// <summary>
+    /// Addition interface
+    /// </summary>
     public interface IAddition
     {
         int Add(int a, int b);
@@ -10,6 +13,9 @@
         
     }
 
+    /// <summary>
+    /// Subtraction interface
+    /// </summary>
     public interface ISubtraction
     {
         int Subtract(int a, int b);
@@ -18,6 +24,9 @@
         double Subtract(double a, double b);
     }
 
+    /// <summary>
+    /// Multiplication interface
+    /// </summary>
     public interface IMultiplication
     {
         int Multiply(int a, int b);
@@ -26,6 +35,9 @@
         double Multiply(double a, double b);
     }
 
+    /// <summary>
+    /// Division interface
+    /// </summary>
     public interface IDivision
     {
         double Divide(int a, int b);
@@ -34,6 +46,9 @@
         double Divide(double a, double b);
     }
 
+    /// <summary>
+    /// Modulus interface
+    /// </summary>
     public interface IModulus
     {
         int Modulus(int a, int b);
@@ -42,6 +57,9 @@
         double Modulus(double a, double b);
     }
 
+    /// <summary>
+    /// Unary operations interface
+    /// </summary>
     public interface IUnaryOperations
     {
         int Increment(int a);
@@ -60,10 +78,14 @@
         double Negate(double a);
     }
     #endregion
+
+    /// <summary>
+    /// Arithmetic class
+    /// </summary>
     public class Arithmetic : IAddition, ISubtraction, IMultiplication, IDivision, IModulus, IUnaryOperations
     {
         #region Addition
-
+        // addition section for all types
         public int Add(int a, int b) => a + b;
         public decimal Add(decimal a, decimal b) => a + b;
         public float Add(float a, float b) => a + b;
@@ -73,7 +95,7 @@
         #endregion
 
         #region Subtraction
-
+        // subtraction section for all types
         public int Subtract(int a, int b) => a - b;
         public decimal Subtract(decimal a, decimal b) => a - b;
         public float Subtract(float a, float b) => a - b;
@@ -82,7 +104,7 @@
         #endregion
 
         #region Multiplication
-
+        // multiplication section for all types
         public int Multiply(int a, int b) => a * b;
         public decimal Multiply(decimal a, decimal b) => a * b;
         public float Multiply(float a, float b) => a * b;
@@ -91,7 +113,7 @@
         #endregion
 
         #region Division
-
+        // division section for all types
         public double Divide(int a, int b)
         {
             if (b == 0)
@@ -131,7 +153,7 @@
         #endregion
 
         #region Modulus
-
+        // modulus section for all types
         public int Modulus(int a, int b) => a % b;
         public decimal Modulus(decimal a, decimal b) => a % b;
         public float Modulus(float a, float b) => a % b;
@@ -140,7 +162,7 @@
         #endregion
 
         #region Unary Operations
-
+        // unary operations section for all types
         public int Increment(int a) => ++a;
         public decimal Increment(decimal a) => ++a;
         public float Increment(float a) => ++a;
