@@ -1,18 +1,89 @@
 ﻿@page "/counter"
+@using ArithmeticLibrary;
+@using System;
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Calculater</PageTitle>
 
-<h1>Counter</h1>
+<h1>Calculater</h1>
 
-<p role="status">Current count: @currentCount</p>
+<div>
+    <p>Enter numbers for arithmetic operations:</p>
+    <label for="number1">Number 1:</label>
+    <input type="text" id="number1" @bind="number1" />
+    <br />
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+    <label for="number2">Number 2:</label>
+    <input type="text" id="number2" @bind="number2" />
+    <br />
+
+    <button class="btn btn-secondary" @onclick="CalculateArithmetic">Calculate Arithmetic</button>
+</div>
+
+<p>Arithmetic Operations:</p>
+
+<p>@number1 + @number2 = @sumInt</p>
+<p>@number1 - @number2 = @differenceFloat</p>
+<p>@number1 * @number2 = @productDouble</p>
+<p>@number1 * @number2 = @divisionDouble</p>
 
 @code {
-    private int currentCount = 0;
 
-    private void IncrementCount()
+    public Arithmetic calculator { get; set; } = new Arithmetic();
+    public int sumInt;
+    public float differenceFloat;
+    public double productDouble;
+    public double divisionDouble;
+
+    // User input
+    private string number1 = "0";
+    private string number2 = "0";
+
+    // Addition example
+    public int AddTwoNumbers(int a, int b)
     {
-        currentCount++;
+        return calculator.Add(a, b);
+    }
+
+    // Subtraction example
+    public float SubtractTwoNumbers(float a, float b)
+    {
+        return calculator.Subtract(a, b);
+    }
+
+    // Multiplication example
+    public double MultiplyTwoNumbers(double a, double b)
+    {
+        return calculator.Multiply(a, b);
+    }
+
+    public double DivideTwoNumbers(double a, double b)
+    {
+        return calculator.Divide(a, b);
+    }
+
+    // Event handler for button click
+    private void CalculateArithmetic()
+    {
+        bool isValidInt1 = IsStringValidInt(number1);
+        bool isValidInt2 = IsStringValidInt(number1);
+
+        if(isValidInt1 && isValidInt2)
+        {
+            // Parse user input as numbers
+            int num1 = int.TryParse(number1, out int result1) ? result1 : 0;
+            int num2 = int.TryParse(number2, out int result2) ? result2 : 0;
+
+            // Perform arithmetic operations with user input
+            sumInt = AddTwoNumbers(num1, num2);
+            differenceFloat = SubtractTwoNumbers(float.Parse(number1), float.Parse(number2));
+            productDouble = MultiplyTwoNumbers(double.Parse(number1), double.Parse(number2));
+            if (num2 != 0) divisionDouble = DivideTwoNumbers(double.Parse(number1), double.Parse(number2));
+        }
+    }
+
+    public bool IsStringValidInt(string input)
+    {
+        // Try to parse the string as an integer
+        return int.TryParse(input, out _);
     }
 }

@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.3" PrivateAssets="all" />
+    <!-- ... other references ... -->
+    <ProjectReference Include="/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj"/>
   </ItemGroup>
-
 </Project>

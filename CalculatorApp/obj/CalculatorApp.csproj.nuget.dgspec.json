@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj": {}
+    "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj": {}
   },
   "projects": {
-    "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj": {
+    "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
-        "projectName": "CalculatorApp",
-        "projectPath": "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
+        "projectUniqueName": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj",
+        "projectName": "ArithmeticLibrary",
+        "projectPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj",
         "packagesPath": "/Users/emilio/.nuget/packages/",
-        "outputPath": "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/obj/",
+        "outputPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/emilio/.nuget/NuGet/NuGet.Config"
@@ -27,6 +27,64 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
+        "projectName": "CalculatorApp",
+        "projectPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
+        "packagesPath": "/Users/emilio/.nuget/packages/",
+        "outputPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/emilio/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj": {
+                "projectPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

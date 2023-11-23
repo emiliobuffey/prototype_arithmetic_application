@@ -475,6 +475,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "ArithmeticLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ArithmeticLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArithmeticLibrary.dll": {}
+        }
       }
     },
     "net7.0/browser-wasm": {
@@ -944,6 +954,16 @@
         },
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "ArithmeticLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/ArithmeticLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ArithmeticLibrary.dll": {}
         }
       }
     }
@@ -1792,10 +1812,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ArithmeticLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj",
+      "msbuildProject": "../ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "ArithmeticLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.3",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.3"
     ]
@@ -1806,11 +1832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
+      "projectUniqueName": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
       "projectName": "CalculatorApp",
-      "projectPath": "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
+      "projectPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/CalculatorApp.csproj",
       "packagesPath": "/Users/emilio/.nuget/packages/",
-      "outputPath": "/Users/emilio/Developer/Peer's_Coding_Library  /prototype_arithmetic_application/CalculatorApp/obj/",
+      "outputPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/CalculatorApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/emilio/.nuget/NuGet/NuGet.Config"
@@ -1825,7 +1851,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj": {
+              "projectPath": "/Users/emilio/Developer/Peer_Coding_Library/prototype_arithmetic_application/ArithmeticLibrary/ArithmeticLibrary/ArithmeticLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
